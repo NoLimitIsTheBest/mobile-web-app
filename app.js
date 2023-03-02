@@ -61,14 +61,14 @@ function addRow(contact){
 
     var nameCell = row.insertCell();
     nameCell.setAttribute("data-label", "Name");
-    nameCell.innerHKTML = contact.name;
+    nameCell.innerHTML = contact.name;
 
     var addressCell = row.insertCell();
     addressCell.setAttribute("data-label", "Address");
-    addressCell.innerHKTML = contact.address;
+    addressCell.innerHTML = contact.address;
 
     var mobileCell = row.insertCell();
     mobileCell.setAttribute("data-label", "Mobile");
-    mpbileCell.innerHKTML = contact.monbile;
+    mobileCell.innerHTML = contact.phone.mobile;
 
 }
