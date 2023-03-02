@@ -31,7 +31,7 @@ function initialize(){
 
 function retrieveContacts(){
     const xhr = new XMLHttpRequest();
-    const url = "contacts.json"
+    const url = "contacts.json";
 
     xhr.onreadystatechange = function(){
         if(xhr.readyState === 4){
@@ -46,7 +46,7 @@ function retrieveContacts(){
 
     };
 
-    xhr.open("get,url");
+    xhr.open("get",url);
     xhr.send();
 
 }
